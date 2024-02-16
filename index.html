@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Hello</title>
+</head>
+<body>
+
+    <!-- importazione di VUE -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <div id="app">
+        <h1>
+            <!-- Stampare a schermo un messaggio all’interno di un h1, utilizzando i data. -->
+            {{ title }}
+
+        </h1>
+    </div>
+
+    <!-- importazione libreria  -->
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    // i miei dati 
+                    title: "Benvenuto!",
+                }
+            }
+        }).mount("#app");
+    </script>
+
+    
+</body>
+</html>
